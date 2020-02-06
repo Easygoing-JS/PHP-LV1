@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #fdf1ec;
+    text-align: center;
+    color: #474747
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a :hover {
+    text-decoration: underline;
+}
+
+.full {
+    width: 100%
+}
+
+article {
+    margin-top: 40px;
+    padding: 5px;
+}
+
+footer {
+    width: 700px;
+    margin: 0 auto 20px;
+    border-top: 1px solid #d2d2d2;
+    padding-top: 10px;
+    text-align: right;
+    color: #474747;
+}
+
+nav {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    margin: 0 auto 20px;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 10px 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    min-width: 80px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #6fd4b8;
+    font-weight: normal;
+}
+
+.active, .nav-link:hover {
+    background-color: #79b0a1;
+}
+
+.nav-link:active {
+    opacity: 0.5;
+}
+
+main {
+    margin: 0 auto;
+    width: 700px;
+    min-height: 600px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+.goods-list, .good-page {
+    margin: 0 auto;
+    width: 700px;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods-item {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 280px;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 3px 0 rgba(0, 0, 0, 0.15);
+    border: 1px dashed transparent;
+}
+
+.goods-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #474747;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #474747;
+}
+
+.card-big {
+    width: 300px;
+    padding: 10px;
+}
+
+.card-desc {
+
+}
+
+.card-photo-big {
+    width: 400px;
+}
+
+.buy-button {
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #79b0a1;
+    color: #ffffff;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+}
+
+.buy-button:hover {
+    background-color: #fff;
+    border-color: #79b0a1;
+    color: #79b0a1;
+}
+
+.buy-button:active {
+    color: #ffffff;
+    background-color: #79b0a1;
+}
+
+.reg-word, .admin-word {
+    color: #474747;
+    font-weight: normal;
+}
+
+.admin-link {
+    color: #474747;
+    font-weight: bold;
+}
+
+.admin-link:hover {
+    text-decoration: underline;
+}
+
+#formProd {
+    padding: 10px;
+    background-color: #fff3ee;
+}
+
+#formProd > div {
+    margin-top: 5px;
+}
+
+#menu {
+    list-style: none;
+}
+
+#menu li {
+    list-style: none;
+    display: block;
+}
+
+#menu li div {
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+}
+
+#menu li input {
+    width: 20px;
+}
+
+#idForm {
+    margin-top: 50px;
+}
+
+
+.twoForm {
+    width: 100%;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.cartRow {
+    margin-top: 10px;
+    border: thin solid #d2d2d2;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+.cartRow div {
+    margin: 10px;
+}
+
+.cartImg {
+    width: 150px;
+}
+
+.btnDel {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.reg > div {
+    margin: 10px 0;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    outline: none;
+    color: #474747;
+}
+
+input:focus {
+    border-color: #6fd4b8;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin: 0 0 0 auto;
+    width: 220px;
+    height: 30px;
+    min-width: 80px;
+    border: transparent;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #6fd4b8;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+input[type="submit"]:hover {
+    background-color: #79b0a1;
+}
+
+input[type="submit"]:active {
+    opacity: 0.5;
+}
+
+.calc {
+    width: 100px;
+    text-align: center;
+}
+
+input.calc-btn {
+    width: 10px;
+}
